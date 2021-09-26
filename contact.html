@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <title> My website by using BootsTrap Framework </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning" href="#">Tothepoint </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active .text-warning" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item .text-warning">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Classes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">IIT JEE</a></li>
+              <li><a class="dropdown-item" href="#">NEET</a></li>
+              <li><a class="dropdown-item" href="#">AMU Entrances</a></li>
+              <li><a class="dropdown-item" href="#">Jamia Entrances</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Class 10th Board </a></li>
+              <li><a class="dropdown-item" href="#">Class 12th Board </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#signinModal">Login</button>
+          <button class="btn btn-danger" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- sign in page-->
+  <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signModalLabel">Login page</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Signin</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- sign up page -->
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get an Account in ToThePoint </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+           
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">SignUp</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <!-- main containrs of about -->
+
+    <div class="containerabout">
+      <h2>Contact us</h2>
+
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div>
+
+      <form class="row g-3">
+
+
+
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Class</label>
+          <select id="inputState" class="form-select">
+            <option selected>IIT JEE Prepration</option>
+            <option value="">NEET Prepration</option>
+            <option value=""> Class 12th  </option>
+            <option value=""> Class 12th pass out  </option>
+            <option value="">Class 11th</option>
+            <option value="">Class 10th</option>
+            <option value="">class 9th</option>
+            <option value="">class 8th</option>
+            <option value="">Class 7th  </option>
+            <option value="">class 6th</option>
+            <option value="">Class +2 Prepration AMU</option>
+            <option value="">class 9th Preapration AMU</option>
+            <option value="">class 6th Preapration AMU</option>
+            <option value="">Class +2 Prepration JAMIA MILLIA ISLAMIA</option>
+            <option value="">class 9th Preapration JAMIA MILLIA ISLAMIA</option>
+            <option value="">class 6th Preapration JAMIA MILLIA ISLAMIA</option>
+            <option value="">Class +2 Prepration BHU</option>
+            <option value="">class 9th Preapration BHU</option>
+            <option value="">class 6th Preapration BHU</option>
+           
+            
+          </select>
+        </div>
+
+
+
+       
+
+
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Mobile Number</label>
+          <input type="phone" class="form-control" id="phone">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress"
+            placeholder="Exemple;locality ,district ,state,Country pin Code">
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose</option>
+            <option value="">Andaman and Nicobar (UT)</option>
+            <option value=""> Andhra Pradesh </option>
+            <option value="">Arunachal Pradesh</option>
+            <option value="">Assam</option>
+            <option value="">Bihar </option>
+            <option value="">Chandigarh (UT)</option>
+            <option value="">Chhattisgarh </option>
+            <option value="">Dadra and Nagar Haveli (UT) </option>
+            <option value="">Daman and Diu (UT) </option>
+            <option value="">Delhi</option>
+            <option value="">Gao</option>
+            <option value="">Gujarat</option>
+            <option value="">Haryana </option>
+            <option value="">Jammu and Kashmir</option>
+            <option value="">Jharkhand</option>
+            <option value="">Karnataka </option>
+            <option value="">Kerala </option>
+            <option value="">Lakshadweep (UT)</option>
+            <option value="">Madhya Pradesh </option>
+            <option value="">Maharashtra </option>
+            <option value=""> Manipur </option>
+            <option value="">Meghalaya </option>
+            <option value="">Mizoram</option>
+            <option value="">Nagaland</option>
+            <option value="">Orissa </option>
+            <option value="">Puducherry (UT)</option>
+            <option value="">Punjab </option>
+            <option value="">Rajasthan </option>
+            <option value="">Sikkim</option>
+            <option value="">Tamil Nadu</option>
+            <option value="">Tripura </option>
+            <option value="">Uttar Pradesh </option>
+            <option value="">Uttarakhand Uttarakhand </option>
+            <option value="">West Bengal</option>
+
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Pin Code</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- footer sections -->
+
+    <footer class="container">
+      <p class="float-end">
+        <a href="#">Back to top</a>
+      </p>
+      <p> www.tothepoint.com © 2020-2021| All Rights Reserved
+      </p>
+
+      <!-- <a href="#">Privacy</a> · <a href="#">Terms</a></p> -->
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
